@@ -1,0 +1,5 @@
+category: Gnome Graphics
+requires: cygwin libexif libintl3 libjpeg62 libusb-win32
+sdesc: "Digital camera library"
+ldesc: "libgphoto2 is a library that can be used by applications to
+access various digital cameras."
