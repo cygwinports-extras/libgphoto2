@@ -1,0 +1,17 @@
+DESCRIPTION="GPhoto library and plugins"
+HOMEPAGE="http://gphoto.sourceforge.net/"
+SRC_URI="mirror://sourceforge/gphoto/${P}.tar.bz2"
+
+PKG_NAMES="${PN} ${PN}-devel ${PN}-doc"
+PKG_HINTS='setup devel doc'
+PKG_CONTENTS[0]="--exclude=apidocs.html --exclude=man3
+                 usr/bin/*.dll usr/lib/${PN}/ usr/lib/${PN}_port/ usr/share/"
+PKG_CONTENTS[1]="usr/bin/*-config usr/include/ usr/lib/lib*.*
+                 usr/lib/pkgconfig/ usr/share/man/man3/"
+PKG_CONTENTS[2]="usr/share/doc/${P}/apidocs.html/"
+
+CYGCONF_ARGS="--disable-static --disable-docs --with-drivers=all --with-doc-dir=/usr/share/doc/${P}"
+
+DIFF_EXCLUDES="README
+	codeset.m4 gettext.m4 glibc21.m4 int*.m4 lcmessage.m4 long*.m4 *-posix.m4
+	signed.m4 stdint_h.m4 ulonglong.m4 *_t.m4 *size*.m4"
