@@ -1,4 +1,4 @@
-category: Gnome Graphics Doc
+category: Graphics Doc
 external-source: libgphoto2
 sdesc: "Digital camera library (documentation)"
 ldesc: "libgphoto2 is a library that can be used by applications to

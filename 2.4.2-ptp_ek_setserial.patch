@@ -1,0 +1,11 @@
+--- origsrc/libgphoto2-2.4.2/camlibs/ptp2/ptp.h	2008-07-13 15:37:15.000000000 -0500
++++ src/libgphoto2-2.4.2/camlibs/ptp2/ptp.h	2008-07-16 20:27:37.125000000 -0500
+@@ -1654,7 +1654,7 @@
+ uint16_t ptp_ek_9009 (PTPParams* params, uint32_t*, uint32_t*);
+ uint16_t ptp_ek_900c (PTPParams* params, unsigned char **serial, unsigned int *size);
+ uint16_t ptp_ek_getserial (PTPParams* params, unsigned char **serial, unsigned int *size);
+-uint16_t ptp_ek_setserial (PTPParams* params, unsigned char *serial, uint32_t size);
++uint16_t ptp_ek_setserial (PTPParams* params, unsigned char *serial, unsigned int size);
+ uint16_t ptp_ek_settext (PTPParams* params, PTPEKTextParams *text);
+ uint16_t ptp_ek_sendfileobjectinfo (PTPParams* params, uint32_t* store,
+ 				uint32_t* parenthandle, uint32_t* handle,

@@ -6,21 +6,21 @@ various digital cameras.
 Runtime requirements:
   cygwin-1.5.25-15
   libexif12-0.6.16-2
-  libiconv2-1.11-1
-  libintl8-0.15-1
+  libiconv2-1.12-1
+  libintl8-0.17-2
   libjpeg62-6b-12
-  libltdl7-2.2.2-2
+  libltdl7-2.2.6a-1
   libusb-win32-0.1.12.1-2
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.61-1
-  automake1.10-1.10.1-1
-  binutils-20080523-2
-  cygport-0.3.12-1
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.2-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
-  libtool-2.2.2-2
+  libtool-2.2.6a-1
   make-3.81-1
   pkg-config-0.23a-2
   sed-4.1.5-2
@@ -34,17 +34,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libgphoto2-2.4.2-X-src.tar.bz2
+  unpack libgphoto2-2.4.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libgphoto2-2.4.2-X.cygport all
+  cygport ./libgphoto2-2.4.3-X.cygport all
 
 This will create:
-  /usr/src/libgphoto2-2.4.2-X-src.tar.bz2
-  /usr/src/libgphoto2-2.4.2-X.tar.bz2
-  /usr/src/libgphoto2-devel-2.4.2-X.tar.bz2
-  /usr/src/libgphoto2-doc-2.4.2-X.tar.bz2
+  /usr/src/libgphoto2-2.4.3-X-src.tar.bz2
+  /usr/src/libgphoto2-2.4.3-X.tar.bz2
+  /usr/src/libgphoto2-devel-2.4.3-X.tar.bz2
+  /usr/src/libgphoto2-doc-2.4.3-X.tar.bz2
 
 -------------------------------------------
 
@@ -53,127 +53,125 @@ Files included in the binary packages:
 (libgphoto2)
   /usr/bin/cyggphoto2-2.dll
   /usr/bin/cyggphoto2_port-0.dll
-  /usr/lib/libgphoto2/2.4.2/adc65.dll
-  /usr/lib/libgphoto2/2.4.2/adc65.la
-  /usr/lib/libgphoto2/2.4.2/agfa_cl20.dll
-  /usr/lib/libgphoto2/2.4.2/agfa_cl20.la
-  /usr/lib/libgphoto2/2.4.2/aox.dll
-  /usr/lib/libgphoto2/2.4.2/aox.la
-  /usr/lib/libgphoto2/2.4.2/barbie.dll
-  /usr/lib/libgphoto2/2.4.2/barbie.la
-  /usr/lib/libgphoto2/2.4.2/canon.dll
-  /usr/lib/libgphoto2/2.4.2/canon.la
-  /usr/lib/libgphoto2/2.4.2/casio_qv.dll
-  /usr/lib/libgphoto2/2.4.2/casio_qv.la
-  /usr/lib/libgphoto2/2.4.2/clicksmart310.dll
-  /usr/lib/libgphoto2/2.4.2/clicksmart310.la
-  /usr/lib/libgphoto2/2.4.2/digigr8.dll
-  /usr/lib/libgphoto2/2.4.2/digigr8.la
-  /usr/lib/libgphoto2/2.4.2/digita.dll
-  /usr/lib/libgphoto2/2.4.2/digita.la
-  /usr/lib/libgphoto2/2.4.2/dimagev.dll
-  /usr/lib/libgphoto2/2.4.2/dimagev.la
-  /usr/lib/libgphoto2/2.4.2/dimera3500.dll
-  /usr/lib/libgphoto2/2.4.2/dimera3500.la
-  /usr/lib/libgphoto2/2.4.2/directory.dll
-  /usr/lib/libgphoto2/2.4.2/directory.la
-  /usr/lib/libgphoto2/2.4.2/enigma13.dll
-  /usr/lib/libgphoto2/2.4.2/enigma13.la
-  /usr/lib/libgphoto2/2.4.2/fuji.dll
-  /usr/lib/libgphoto2/2.4.2/fuji.la
-  /usr/lib/libgphoto2/2.4.2/gsmart300.dll
-  /usr/lib/libgphoto2/2.4.2/gsmart300.la
-  /usr/lib/libgphoto2/2.4.2/hp215.dll
-  /usr/lib/libgphoto2/2.4.2/hp215.la
-  /usr/lib/libgphoto2/2.4.2/iclick.dll
-  /usr/lib/libgphoto2/2.4.2/iclick.la
-  /usr/lib/libgphoto2/2.4.2/jamcam.dll
-  /usr/lib/libgphoto2/2.4.2/jamcam.la
-  /usr/lib/libgphoto2/2.4.2/jd11.dll
-  /usr/lib/libgphoto2/2.4.2/jd11.la
-  /usr/lib/libgphoto2/2.4.2/kodak_dc120.dll
-  /usr/lib/libgphoto2/2.4.2/kodak_dc120.la
-  /usr/lib/libgphoto2/2.4.2/kodak_dc210.dll
-  /usr/lib/libgphoto2/2.4.2/kodak_dc210.la
-  /usr/lib/libgphoto2/2.4.2/kodak_dc240.dll
-  /usr/lib/libgphoto2/2.4.2/kodak_dc240.la
-  /usr/lib/libgphoto2/2.4.2/kodak_dc3200.dll
-  /usr/lib/libgphoto2/2.4.2/kodak_dc3200.la
-  /usr/lib/libgphoto2/2.4.2/kodak_ez200.dll
-  /usr/lib/libgphoto2/2.4.2/kodak_ez200.la
-  /usr/lib/libgphoto2/2.4.2/konica.dll
-  /usr/lib/libgphoto2/2.4.2/konica.la
-  /usr/lib/libgphoto2/2.4.2/konica_qm150.dll
-  /usr/lib/libgphoto2/2.4.2/konica_qm150.la
-  /usr/lib/libgphoto2/2.4.2/largan.dll
-  /usr/lib/libgphoto2/2.4.2/largan.la
-  /usr/lib/libgphoto2/2.4.2/lg_gsm.dll
-  /usr/lib/libgphoto2/2.4.2/lg_gsm.la
-  /usr/lib/libgphoto2/2.4.2/mars.dll
-  /usr/lib/libgphoto2/2.4.2/mars.la
-  /usr/lib/libgphoto2/2.4.2/mustek.dll
-  /usr/lib/libgphoto2/2.4.2/mustek.la
-  /usr/lib/libgphoto2/2.4.2/panasonic_coolshot.dll
-  /usr/lib/libgphoto2/2.4.2/panasonic_coolshot.la
-  /usr/lib/libgphoto2/2.4.2/panasonic_dc1000.dll
-  /usr/lib/libgphoto2/2.4.2/panasonic_dc1000.la
-  /usr/lib/libgphoto2/2.4.2/panasonic_dc1580.dll
-  /usr/lib/libgphoto2/2.4.2/panasonic_dc1580.la
-  /usr/lib/libgphoto2/2.4.2/panasonic_l859.dll
-  /usr/lib/libgphoto2/2.4.2/panasonic_l859.la
-  /usr/lib/libgphoto2/2.4.2/pccam300.dll
-  /usr/lib/libgphoto2/2.4.2/pccam300.la
-  /usr/lib/libgphoto2/2.4.2/pccam600.dll
-  /usr/lib/libgphoto2/2.4.2/pccam600.la
-  /usr/lib/libgphoto2/2.4.2/polaroid_pdc320.dll
-  /usr/lib/libgphoto2/2.4.2/polaroid_pdc320.la
-  /usr/lib/libgphoto2/2.4.2/polaroid_pdc640.dll
-  /usr/lib/libgphoto2/2.4.2/polaroid_pdc640.la
-  /usr/lib/libgphoto2/2.4.2/polaroid_pdc700.dll
-  /usr/lib/libgphoto2/2.4.2/polaroid_pdc700.la
-  /usr/lib/libgphoto2/2.4.2/ptp2.dll
-  /usr/lib/libgphoto2/2.4.2/ptp2.la
-  /usr/lib/libgphoto2/2.4.2/ricoh.dll
-  /usr/lib/libgphoto2/2.4.2/ricoh.la
-  /usr/lib/libgphoto2/2.4.2/ricoh_g3.dll
-  /usr/lib/libgphoto2/2.4.2/ricoh_g3.la
-  /usr/lib/libgphoto2/2.4.2/samsung.dll
-  /usr/lib/libgphoto2/2.4.2/samsung.la
-  /usr/lib/libgphoto2/2.4.2/sierra.dll
-  /usr/lib/libgphoto2/2.4.2/sierra.la
-  /usr/lib/libgphoto2/2.4.2/sipix_blink2.dll
-  /usr/lib/libgphoto2/2.4.2/sipix_blink2.la
-  /usr/lib/libgphoto2/2.4.2/sipix_web2.dll
-  /usr/lib/libgphoto2/2.4.2/sipix_web2.la
-  /usr/lib/libgphoto2/2.4.2/smal.dll
-  /usr/lib/libgphoto2/2.4.2/smal.la
-  /usr/lib/libgphoto2/2.4.2/sonix.dll
-  /usr/lib/libgphoto2/2.4.2/sonix.la
-  /usr/lib/libgphoto2/2.4.2/sony_dscf1.dll
-  /usr/lib/libgphoto2/2.4.2/sony_dscf1.la
-  /usr/lib/libgphoto2/2.4.2/sony_dscf55.dll
-  /usr/lib/libgphoto2/2.4.2/sony_dscf55.la
-  /usr/lib/libgphoto2/2.4.2/soundvision.dll
-  /usr/lib/libgphoto2/2.4.2/soundvision.la
-  /usr/lib/libgphoto2/2.4.2/spca50x.dll
-  /usr/lib/libgphoto2/2.4.2/spca50x.la
-  /usr/lib/libgphoto2/2.4.2/sq905.dll
-  /usr/lib/libgphoto2/2.4.2/sq905.la
-  /usr/lib/libgphoto2/2.4.2/stv0674.dll
-  /usr/lib/libgphoto2/2.4.2/stv0674.la
-  /usr/lib/libgphoto2/2.4.2/stv0680.dll
-  /usr/lib/libgphoto2/2.4.2/stv0680.la
-  /usr/lib/libgphoto2/2.4.2/sx330z.dll
-  /usr/lib/libgphoto2/2.4.2/sx330z.la
-  /usr/lib/libgphoto2/2.4.2/template.dll
-  /usr/lib/libgphoto2/2.4.2/template.la
-  /usr/lib/libgphoto2/2.4.2/topfield.dll
-  /usr/lib/libgphoto2/2.4.2/topfield.la
-  /usr/lib/libgphoto2/2.4.2/toshiba_pdrm11.dll
-  /usr/lib/libgphoto2/2.4.2/toshiba_pdrm11.la
+  /usr/lib/libgphoto2/2.4.3/adc65.dll
+  /usr/lib/libgphoto2/2.4.3/adc65.la
+  /usr/lib/libgphoto2/2.4.3/agfa_cl20.dll
+  /usr/lib/libgphoto2/2.4.3/agfa_cl20.la
+  /usr/lib/libgphoto2/2.4.3/aox.dll
+  /usr/lib/libgphoto2/2.4.3/aox.la
+  /usr/lib/libgphoto2/2.4.3/barbie.dll
+  /usr/lib/libgphoto2/2.4.3/barbie.la
+  /usr/lib/libgphoto2/2.4.3/canon.dll
+  /usr/lib/libgphoto2/2.4.3/canon.la
+  /usr/lib/libgphoto2/2.4.3/casio_qv.dll
+  /usr/lib/libgphoto2/2.4.3/casio_qv.la
+  /usr/lib/libgphoto2/2.4.3/clicksmart310.dll
+  /usr/lib/libgphoto2/2.4.3/clicksmart310.la
+  /usr/lib/libgphoto2/2.4.3/digigr8.dll
+  /usr/lib/libgphoto2/2.4.3/digigr8.la
+  /usr/lib/libgphoto2/2.4.3/digita.dll
+  /usr/lib/libgphoto2/2.4.3/digita.la
+  /usr/lib/libgphoto2/2.4.3/dimagev.dll
+  /usr/lib/libgphoto2/2.4.3/dimagev.la
+  /usr/lib/libgphoto2/2.4.3/dimera3500.dll
+  /usr/lib/libgphoto2/2.4.3/dimera3500.la
+  /usr/lib/libgphoto2/2.4.3/directory.dll
+  /usr/lib/libgphoto2/2.4.3/directory.la
+  /usr/lib/libgphoto2/2.4.3/enigma13.dll
+  /usr/lib/libgphoto2/2.4.3/enigma13.la
+  /usr/lib/libgphoto2/2.4.3/fuji.dll
+  /usr/lib/libgphoto2/2.4.3/fuji.la
+  /usr/lib/libgphoto2/2.4.3/gsmart300.dll
+  /usr/lib/libgphoto2/2.4.3/gsmart300.la
+  /usr/lib/libgphoto2/2.4.3/hp215.dll
+  /usr/lib/libgphoto2/2.4.3/hp215.la
+  /usr/lib/libgphoto2/2.4.3/iclick.dll
+  /usr/lib/libgphoto2/2.4.3/iclick.la
+  /usr/lib/libgphoto2/2.4.3/jamcam.dll
+  /usr/lib/libgphoto2/2.4.3/jamcam.la
+  /usr/lib/libgphoto2/2.4.3/jd11.dll
+  /usr/lib/libgphoto2/2.4.3/jd11.la
+  /usr/lib/libgphoto2/2.4.3/jl2005a.dll
+  /usr/lib/libgphoto2/2.4.3/jl2005a.la
+  /usr/lib/libgphoto2/2.4.3/kodak_dc120.dll
+  /usr/lib/libgphoto2/2.4.3/kodak_dc120.la
+  /usr/lib/libgphoto2/2.4.3/kodak_dc210.dll
+  /usr/lib/libgphoto2/2.4.3/kodak_dc210.la
+  /usr/lib/libgphoto2/2.4.3/kodak_dc240.dll
+  /usr/lib/libgphoto2/2.4.3/kodak_dc240.la
+  /usr/lib/libgphoto2/2.4.3/kodak_dc3200.dll
+  /usr/lib/libgphoto2/2.4.3/kodak_dc3200.la
+  /usr/lib/libgphoto2/2.4.3/kodak_ez200.dll
+  /usr/lib/libgphoto2/2.4.3/kodak_ez200.la
+  /usr/lib/libgphoto2/2.4.3/konica.dll
+  /usr/lib/libgphoto2/2.4.3/konica.la
+  /usr/lib/libgphoto2/2.4.3/konica_qm150.dll
+  /usr/lib/libgphoto2/2.4.3/konica_qm150.la
+  /usr/lib/libgphoto2/2.4.3/largan.dll
+  /usr/lib/libgphoto2/2.4.3/largan.la
+  /usr/lib/libgphoto2/2.4.3/lg_gsm.dll
+  /usr/lib/libgphoto2/2.4.3/lg_gsm.la
+  /usr/lib/libgphoto2/2.4.3/mars.dll
+  /usr/lib/libgphoto2/2.4.3/mars.la
+  /usr/lib/libgphoto2/2.4.3/mustek.dll
+  /usr/lib/libgphoto2/2.4.3/mustek.la
+  /usr/lib/libgphoto2/2.4.3/panasonic_coolshot.dll
+  /usr/lib/libgphoto2/2.4.3/panasonic_coolshot.la
+  /usr/lib/libgphoto2/2.4.3/panasonic_dc1000.dll
+  /usr/lib/libgphoto2/2.4.3/panasonic_dc1000.la
+  /usr/lib/libgphoto2/2.4.3/panasonic_dc1580.dll
+  /usr/lib/libgphoto2/2.4.3/panasonic_dc1580.la
+  /usr/lib/libgphoto2/2.4.3/panasonic_l859.dll
+  /usr/lib/libgphoto2/2.4.3/panasonic_l859.la
+  /usr/lib/libgphoto2/2.4.3/pccam300.dll
+  /usr/lib/libgphoto2/2.4.3/pccam300.la
+  /usr/lib/libgphoto2/2.4.3/pccam600.dll
+  /usr/lib/libgphoto2/2.4.3/pccam600.la
+  /usr/lib/libgphoto2/2.4.3/polaroid_pdc320.dll
+  /usr/lib/libgphoto2/2.4.3/polaroid_pdc320.la
+  /usr/lib/libgphoto2/2.4.3/polaroid_pdc640.dll
+  /usr/lib/libgphoto2/2.4.3/polaroid_pdc640.la
+  /usr/lib/libgphoto2/2.4.3/polaroid_pdc700.dll
+  /usr/lib/libgphoto2/2.4.3/polaroid_pdc700.la
+  /usr/lib/libgphoto2/2.4.3/ptp2.dll
+  /usr/lib/libgphoto2/2.4.3/ptp2.la
+  /usr/lib/libgphoto2/2.4.3/ricoh.dll
+  /usr/lib/libgphoto2/2.4.3/ricoh.la
+  /usr/lib/libgphoto2/2.4.3/ricoh_g3.dll
+  /usr/lib/libgphoto2/2.4.3/ricoh_g3.la
+  /usr/lib/libgphoto2/2.4.3/samsung.dll
+  /usr/lib/libgphoto2/2.4.3/samsung.la
+  /usr/lib/libgphoto2/2.4.3/sierra.dll
+  /usr/lib/libgphoto2/2.4.3/sierra.la
+  /usr/lib/libgphoto2/2.4.3/sipix_blink2.dll
+  /usr/lib/libgphoto2/2.4.3/sipix_blink2.la
+  /usr/lib/libgphoto2/2.4.3/sipix_web2.dll
+  /usr/lib/libgphoto2/2.4.3/sipix_web2.la
+  /usr/lib/libgphoto2/2.4.3/smal.dll
+  /usr/lib/libgphoto2/2.4.3/smal.la
+  /usr/lib/libgphoto2/2.4.3/sonix.dll
+  /usr/lib/libgphoto2/2.4.3/sonix.la
+  /usr/lib/libgphoto2/2.4.3/sony_dscf1.dll
+  /usr/lib/libgphoto2/2.4.3/sony_dscf1.la
+  /usr/lib/libgphoto2/2.4.3/sony_dscf55.dll
+  /usr/lib/libgphoto2/2.4.3/sony_dscf55.la
+  /usr/lib/libgphoto2/2.4.3/soundvision.dll
+  /usr/lib/libgphoto2/2.4.3/soundvision.la
+  /usr/lib/libgphoto2/2.4.3/spca50x.dll
+  /usr/lib/libgphoto2/2.4.3/spca50x.la
+  /usr/lib/libgphoto2/2.4.3/sq905.dll
+  /usr/lib/libgphoto2/2.4.3/sq905.la
+  /usr/lib/libgphoto2/2.4.3/stv0674.dll
+  /usr/lib/libgphoto2/2.4.3/stv0674.la
+  /usr/lib/libgphoto2/2.4.3/stv0680.dll
+  /usr/lib/libgphoto2/2.4.3/stv0680.la
+  /usr/lib/libgphoto2/2.4.3/sx330z.dll
+  /usr/lib/libgphoto2/2.4.3/sx330z.la
+  /usr/lib/libgphoto2/2.4.3/topfield.dll
+  /usr/lib/libgphoto2/2.4.3/topfield.la
+  /usr/lib/libgphoto2/2.4.3/toshiba_pdrm11.dll
+  /usr/lib/libgphoto2/2.4.3/toshiba_pdrm11.la
   /usr/lib/libgphoto2/print-camera-list.exe
-  /usr/lib/libgphoto2_port.dll.a
-  /usr/lib/libgphoto2_port.la
   /usr/lib/libgphoto2_port/0.8.0/disk.dll
   /usr/lib/libgphoto2_port/0.8.0/disk.la
   /usr/lib/libgphoto2_port/0.8.0/ptpip.dll
@@ -182,23 +180,24 @@ Files included in the binary packages:
   /usr/lib/libgphoto2_port/0.8.0/serial.la
   /usr/lib/libgphoto2_port/0.8.0/usb.dll
   /usr/lib/libgphoto2_port/0.8.0/usb.la
-  /usr/share/doc/libgphoto2-2.4.2/ABOUT-NLS
-  /usr/share/doc/libgphoto2-2.4.2/AUTHORS
-  /usr/share/doc/libgphoto2-2.4.2/COPYING
-  /usr/share/doc/libgphoto2-2.4.2/ChangeLog
-  /usr/share/doc/libgphoto2-2.4.2/HACKING
-  /usr/share/doc/libgphoto2-2.4.2/INSTALL
-  /usr/share/doc/libgphoto2-2.4.2/MAINTAINERS
-  /usr/share/doc/libgphoto2-2.4.2/NEWS
-  /usr/share/doc/libgphoto2-2.4.2/README
-  /usr/share/doc/libgphoto2-2.4.2/README.apidocs
-  /usr/share/doc/libgphoto2-2.4.2/camlibs/README.*
-  /usr/share/libgphoto2/2.4.2/konica/english
-  /usr/share/libgphoto2/2.4.2/konica/french
-  /usr/share/libgphoto2/2.4.2/konica/german
-  /usr/share/libgphoto2/2.4.2/konica/japanese
-  /usr/share/libgphoto2/2.4.2/konica/korean
-  /usr/share/libgphoto2/2.4.2/konica/spanish
+  /usr/share/doc/libgphoto2-2.4.3/ABOUT-NLS
+  /usr/share/doc/libgphoto2-2.4.3/AUTHORS
+  /usr/share/doc/libgphoto2-2.4.3/COPYING
+  /usr/share/doc/libgphoto2-2.4.3/ChangeLog
+  /usr/share/doc/libgphoto2-2.4.3/HACKING
+  /usr/share/doc/libgphoto2-2.4.3/INSTALL
+  /usr/share/doc/libgphoto2-2.4.3/MAINTAINERS
+  /usr/share/doc/libgphoto2-2.4.3/NEWS
+  /usr/share/doc/libgphoto2-2.4.3/README
+  /usr/share/doc/libgphoto2-2.4.3/README.apidocs
+  /usr/share/doc/libgphoto2-2.4.3/README.packaging
+  /usr/share/doc/libgphoto2-2.4.3/camlibs/README.*
+  /usr/share/libgphoto2/2.4.3/konica/english
+  /usr/share/libgphoto2/2.4.3/konica/french
+  /usr/share/libgphoto2/2.4.3/konica/german
+  /usr/share/libgphoto2/2.4.3/konica/japanese
+  /usr/share/libgphoto2/2.4.3/konica/korean
+  /usr/share/libgphoto2/2.4.3/konica/spanish
   /usr/share/locale/cs/LC_MESSAGES/libgphoto2_port-0.mo
   /usr/share/locale/da/LC_MESSAGES/libgphoto2-2.mo
   /usr/share/locale/da/LC_MESSAGES/libgphoto2_port-0.mo
@@ -224,6 +223,7 @@ Files included in the binary packages:
   /usr/share/locale/pt_BR/LC_MESSAGES/libgphoto2_port-0.mo
   /usr/share/locale/ru/LC_MESSAGES/libgphoto2-2.mo
   /usr/share/locale/ru/LC_MESSAGES/libgphoto2_port-0.mo
+  /usr/share/locale/sk/LC_MESSAGES/libgphoto2_port-0.mo
   /usr/share/locale/sl/LC_MESSAGES/libgphoto2-2.mo
   /usr/share/locale/sl/LC_MESSAGES/libgphoto2_port-0.mo
   /usr/share/locale/sv/LC_MESSAGES/libgphoto2-2.mo
@@ -260,17 +260,22 @@ Files included in the binary packages:
   /usr/include/gphoto2/gphoto2.h
   /usr/lib/libgphoto2.dll.a
   /usr/lib/libgphoto2.la
+  /usr/lib/libgphoto2_port.dll.a
+  /usr/lib/libgphoto2_port.la
   /usr/lib/pkgconfig/libgphoto2.pc
   /usr/lib/pkgconfig/libgphoto2_port.pc
   /usr/share/man/man3/libgphoto2.3.gz
   /usr/share/man/man3/libgphoto2_port.3.gz
 
 (libgphoto2-doc)
-  /usr/share/doc/libgphoto2-2.4.2/apidocs.html/*
+  /usr/share/doc/libgphoto2-2.4.3/apidocs.html/*
 
 ------------------
 
 Port Notes:
+
+----- version 2.4.3-1 -----
+Version bump.
 
 ----- version 2.4.2-1 -----
 Version bump.

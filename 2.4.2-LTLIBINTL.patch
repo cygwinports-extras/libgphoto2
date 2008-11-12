@@ -1,0 +1,22 @@
+--- origsrc/libgphoto2-2.4.2/libgphoto2/Makefile.am	2007-07-27 00:52:55.000000000 -0500
++++ src/libgphoto2-2.4.2/libgphoto2/Makefile.am	2008-07-16 20:27:37.203125000 -0500
+@@ -41,7 +41,7 @@
+ 	$(top_builddir)/libgphoto2_port/libgphoto2_port/libgphoto2_port.la \
+ 	$(LIBLTDL)					\
+ 	$(LIBEXIF_LIBS)					\
+-	-lm $(INTLLIBS)
++	-lm $(LTLIBINTL)
+ # The libtool docs describe these params, but they don't build.
+ #	"-dlopen" self \
+ #	"-dlopen" $(top_builddir)/camlibs/canon/....la \
+--- origsrc/libgphoto2-2.4.2/libgphoto2_port/libgphoto2_port/Makefile.am	2007-07-27 00:53:18.000000000 -0500
++++ src/libgphoto2-2.4.2/libgphoto2_port/libgphoto2_port/Makefile.am	2008-07-16 20:27:37.218750000 -0500
+@@ -31,7 +31,7 @@
+ 
+ libgphoto2_port_la_LIBADD = \
+ 	$(LIBLTDL) 			\
+-	$(INTLLIBS)
++	$(LTLIBINTL)
+ # The libtool docs describe these params, but they don't build.
+ #	"-dlopen" self \
+ #	"-dlopen" $(top_builddir)/serial/....la \

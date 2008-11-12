@@ -1,4 +1,4 @@
-category: Gnome Graphics
+category: Graphics
 requires: cygwin libgphoto2 libexif-devel libiconv gettext libjpeg-devel libtool libusb-win32
 external-source: libgphoto2
 sdesc: "Digital camera library (development)"

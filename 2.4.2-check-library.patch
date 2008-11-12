@@ -1,0 +1,20 @@
+--- origsrc/libgphoto2-2.4.2/libgphoto2_port/m4/gp-check-library.m4	2007-07-27 00:53:47.000000000 -0500
++++ src/libgphoto2-2.4.2/libgphoto2_port/m4/gp-check-library.m4	2008-07-16 20:27:37.265625000 -0500
+@@ -79,6 +79,7 @@
+ 	*solaris*)	soext=".so" ;;
+ 	*bsd*)		soext=".so" ;;
+ 	*darwin*)	soext=".dylib" ;;
++	*cygwin*)   soext=".dll" ;;
+ 	*w32*)		soext=".dll" ;;
+ esac
+ if test "x$soext" = "x"; then
+--- origsrc/libgphoto2-2.4.2/m4m/gp-check-library.m4	2007-07-27 00:54:04.000000000 -0500
++++ src/libgphoto2-2.4.2/m4m/gp-check-library.m4	2008-07-16 20:27:37.359375000 -0500
+@@ -79,6 +79,7 @@
+ 	*solaris*)	soext=".so" ;;
+ 	*bsd*)		soext=".so" ;;
+ 	*darwin*)	soext=".dylib" ;;
++	*cygwin*)	soext=".dll" ;;
+ 	*w32*)		soext=".dll" ;;
+ esac
+ if test "x$soext" = "x"; then
