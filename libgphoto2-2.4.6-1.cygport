@@ -1,0 +1,24 @@
+DESCRIPTION="GPhoto library and plugins"
+HOMEPAGE="http://gphoto.sourceforge.net/"
+SRC_URI="mirror://sourceforge/gphoto/${P}.tar.bz2"
+PATCH_URI="
+	2.4.2-LTLIBINTL.patch
+	2.4.2-check-library.patch
+	2.4.2-no-libusb-pc.patch
+	2.4.2-pdrm11-__STRING.patch
+	2.4.3-gettext017.patch
+"
+
+PKG_NAMES="${PN} ${PN}_2 ${PN}_port0 ${PN}-devel ${PN}-doc"
+libgphoto2_2_CONTENTS="--exclude=apidocs.html usr/bin/cyggphoto2-2.dll
+                       usr/lib/${PN}/ usr/share/doc/ usr/share/${PN}/
+                       usr/share/locale/*/*/libgphoto2-2.mo"
+libgphoto2_port0_CONTENTS="usr/bin/cyggphoto2_port-0.dll usr/lib/${PN}_port/
+                           usr/share/locale/*/*/libgphoto2_port-0.mo"
+libgphoto2_devel_CONTENTS="usr/bin/*-config usr/include/ usr/lib/lib*.*
+                           usr/lib/pkgconfig/ usr/share/man/man3/"
+libgphoto2_doc_CONTENTS="usr/share/doc/${PN}/apidocs.html/"
+
+CYGCONF_ARGS="--disable-static --disable-docs --with-drivers=all --with-doc-dir=/usr/share/doc/${PN}"
+
+DIFF_EXCLUDES="README auto-m4"
