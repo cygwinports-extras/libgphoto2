@@ -1,0 +1,14 @@
+--- origsrc/libgphoto2-2.4.9/libgphoto2_port/configure.ac	2010-06-01 15:24:48.137477900 -0500
++++ src/libgphoto2-2.4.9/libgphoto2_port/configure.ac	2010-06-01 15:40:42.584069100 -0500
+@@ -351,7 +351,10 @@ AC_CHECK_LIB(pthread, pthread_create)
+ GP_CONFIG_MSG([USB ports])
+ GP_CHECK_LIBRARY([LIBUSB],[libusb],[>= 0.1.5],
+ 		[usb.h],[usb_open],[
+-	IOLIB_SUBDIRS="$IOLIB_SUBDIRS usb usbdiskdirect usbscsi"
++	IOLIB_SUBDIRS="$IOLIB_SUBDIRS usb usbdiskdirect"
++	case $host_os in
++		linux*) IOLIB_SUBDIRS="$IOLIB_SUBDIRS usbscsi" ;;
++	esac
+ ],[],
+ 		[disable-explicitly],
+ 		[http://libusb.sourceforge.net/]
