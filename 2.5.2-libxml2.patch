@@ -1,0 +1,33 @@
+--- origsrc/libgphoto2-2.5.2/camlibs/ptp2/Makefile-files	2013-03-10 06:38:40.000000000 -0500
++++ src/libgphoto2-2.5.2/camlibs/ptp2/Makefile-files	2013-12-23 21:23:59.062351400 -0600
+@@ -10,6 +10,7 @@ ptp2_la_SOURCES = \
+ 	ptp2/ptp-private.h ptp2/ptpip.c ptp2/config.c \
+ 	ptp2/music-players.h ptp2/device-flags.h \
+ 	ptp2/olympus-wrap.c ptp2/olympus-wrap.h
++ptp2_la_CFLAGS = $(LIBXML2_CFLAGS)
+ ptp2_la_LDFLAGS = $(camlib_ldflags)
+ ptp2_la_DEPENDENCIES = $(camlib_dependencies)
+-ptp2_la_LIBADD = $(camlib_libadd) $(LTLIBICONV) $(LIBXML2)
++ptp2_la_LIBADD = $(camlib_libadd) $(LTLIBICONV) $(LIBXML2_LIBS)
+--- origsrc/libgphoto2-2.5.2/configure.ac	2013-12-23 21:10:53.307408800 -0600
++++ src/libgphoto2-2.5.2/configure.ac	2013-12-23 21:26:09.467810200 -0600
+@@ -274,17 +274,12 @@ GP_CONFIG_MSG([JPEG mangling support],[$
+ dnl ---------------------------------------------------------------------------
+ dnl check for libxml22
+ dnl ---------------------------------------------------------------------------
+-LIBXML2=""
+ libxml2_msg="no"
+-AC_SUBST(LIBXML2)
+ AC_ARG_WITH([libxml2], AS_HELP_STRING([--without-libxml2], [Build without libxml2 library (default: no)]))
+ AS_IF([test "x$with_libxml2" != "xno"], [
+-	AC_CHECK_LIB(xml2,xmlFirstElementChild,[
+-		AC_CHECK_HEADER(libxml/parser.h,[
++	PKG_CHECK_MODULES(LIBXML2, libxml-2.0, [
+ 			AC_DEFINE(HAVE_LIBXML2,1,[define if we found LIBXML2 and its headers])
+-			LIBXML2="-lxml2"
+-			libxml2_msg="yes"
+-		])
++			libxml2_msg="yes"],[
+ 	])
+ ])
+ GP_CONFIG_MSG([LIBXML2 to support Olympus E remote control],[${libxml2_msg}])
