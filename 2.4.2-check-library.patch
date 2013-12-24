@@ -4,7 +4,7 @@
  	*solaris*)	soext=".so" ;;
  	*bsd*)		soext=".so" ;;
  	*darwin*)	soext=".dylib" ;;
-+	*cygwin*)   soext=".dll" ;;
++	*cygwin*)	soext=".dll" ;;
  	*w32*)		soext=".dll" ;;
  esac
  if test "x$soext" = "x"; then

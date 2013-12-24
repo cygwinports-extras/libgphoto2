@@ -1,6 +1,0 @@
-category: Graphics
-requires: libgcc1 libintl8 libltdl7 libusb0.1_4
-external-source: libgphoto2
-sdesc: "Digital camera port library (runtime)"
-ldesc: "libgphoto2 is a library that can be used by applications to
-access various digital cameras."

@@ -1,6 +1,12 @@
-DESCRIPTION="GPhoto library and plugins"
+NAME="libgphoto2"
+VERSION=2.4.11
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="Digital camera library"
+DESCRIPTION="libgphoto2 is a library that can be used by applications to
+access various digital cameras."
 HOMEPAGE="http://gphoto.sourceforge.net/"
-SRC_URI="mirror://sourceforge/gphoto/${P}.tar.bz2"
+SRC_URI="mirror://sourceforge/gphoto/libgphoto2-${VERSION}.tar.bz2"
 PATCH_URI="
 	2.4.2-LTLIBINTL.patch
 	2.4.2-check-library.patch
@@ -9,22 +15,21 @@ PATCH_URI="
 	2.4.9-scsi-linux.patch
 "
 
-PKG_NAMES="${PN} ${PN}_2 ${PN}_port0 ${PN}-devel ${PN}-doc"
+PKG_NAMES="${NAME} ${NAME}_2 ${NAME}_port0 ${NAME}-devel ${NAME}-doc"
 libgphoto2_2_CONTENTS="--exclude=apidocs.html usr/bin/cyggphoto2-2.dll
-                       usr/lib/${PN}/ usr/share/doc/ usr/share/${PN}/
+                       usr/lib/${NAME}/ usr/share/doc/ usr/share/${NAME}/
                        usr/share/locale/*/*/libgphoto2-2.mo"
-libgphoto2_port0_CONTENTS="usr/bin/cyggphoto2_port-0.dll usr/lib/${PN}_port/
+libgphoto2_port0_CONTENTS="usr/bin/cyggphoto2_port-0.dll usr/lib/${NAME}_port/
                            usr/share/locale/*/*/libgphoto2_port-0.mo"
 libgphoto2_devel_CONTENTS="usr/bin/*-config usr/include/ usr/lib/lib*.*
                            usr/lib/pkgconfig/ usr/share/man/man3/"
-libgphoto2_doc_CONTENTS="usr/share/doc/${PN}/apidocs.html/"
+libgphoto2_doc_CONTENTS="usr/share/doc/${NAME}/apidocs.html/"
 PKG_IGNORE="usr/lib/udev/"
 
 CYGCONF_ARGS="
-	--disable-static
 	--disable-docs
 	--with-drivers=all
-	--with-doc-dir=/usr/share/doc/${PN}
+	--with-doc-dir=/usr/share/doc/${NAME}
 	PKG_CONFIG=/usr/bin/pkg-config
 "
 
